@@ -45,8 +45,8 @@ sleep 1
 
 cd ../gaps
 echo "Calculating gaps..."
-python /home/mles/bioinformatika/skripte/gaps_positions.py "$FILE1" > hap1_gap_pos.txt
-python /home/mles/bioinformatika/skripte/gaps_positions.py "$FILE2" > hap2_gap_pos.txt
+python gaps_positions.py "$FILE1" > hap1_gap_pos.txt
+python gaps_positions.py "$FILE2" > hap2_gap_pos.txt
 fastagap -c -N "$FILE1" > hap1_fastagap_output.txt
 fastagap -c -N "$FILE2" > hap2_fastagap_output.txt
 
